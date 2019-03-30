@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import random
 
-email = ""
-password = ""
+email = raw_input(Email: )
+password = raw_input(Contraseña: )
 
 r = requests.Session()
 content = r.get("https://www.presearch.org").content
